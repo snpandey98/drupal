@@ -1,0 +1,6 @@
+name:  First form example
+type: module
+description: 'this module is create from.'
+package: Custom
+version: 1.0
+core: 8.x

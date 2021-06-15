@@ -1,0 +1,46 @@
+<?php
+function home_schema() {
+
+  $schema['user_data'] = array(
+    'description' => 'i will store data in this table',
+    'fields' => array(
+      'uid' => array(
+        'type' => 'serial',
+        'not null' => TRUE,
+        'description' => 'Primary Key: this key is use to primary key.',
+      ),
+      'first_name' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'first used to store first name.',
+      ),
+        'gender' => array(
+        'type' => 'varchar',
+        'length' => 50,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'first used to store gender name.',
+      ),
+       
+       'city' => array(
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'first used to store city name.',
+      ),
+
+         'address' => array(
+        'type' => 'varchar',
+        'length' => 5000,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'first used to store address name.',
+      ),
+      
+    'primary key' => array('uid')
+  );
+  return $schema;
+}

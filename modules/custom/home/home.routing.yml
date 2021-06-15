@@ -1,0 +1,8 @@
+home.home_form:
+  path: '/home-form'
+  defaults:
+    _form: '\Drupal\home\Form\HomeTest'
+    _title: 'My home form'
+  requirements:
+    _permission: 'access content'
+

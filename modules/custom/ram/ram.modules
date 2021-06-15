@@ -1,0 +1,13 @@
+<?php
+
+function first_preprocess_node(&$variables) {
+	if($variables['node']->getType() == 'page'){
+		$field_aman_salary = $variables['node']->get('field_aman_salary')->getValue()[0]['value'];
+		$field_ankit_salary = $variables['node']->get('field_ankit_salary')->getValue()[0]['value'];
+		$total = $field_aman_salary + $field_ankit_salary;
+		$variables['total'] = $total;
+	}elseif($variables['node']->getType() == 'indianexpress'){
+		
+	}
+}
+

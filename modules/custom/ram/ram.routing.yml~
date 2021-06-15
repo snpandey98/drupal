@@ -1,0 +1,7 @@
+ram.ram_page:
+  path: '/ram/page'
+  defaults:
+    _controller: '\Drupal\ram\Controller\RamPage::mypage'
+    _title: 'My ram page in drupal 8'
+  requirements:
+    _permission: 'access content'

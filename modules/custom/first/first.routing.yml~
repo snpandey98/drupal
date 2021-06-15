@@ -1,0 +1,9 @@
+first.first_form:
+  path: '/first-form'
+  defaults:
+    _form: '\Drupal\first\Controller\FirstForm'
+    _title: 'My first form'
+  requirements:
+    _permission: 'access content'
+
+

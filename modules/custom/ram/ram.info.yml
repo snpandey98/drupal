@@ -1,0 +1,6 @@
+name:   Ram example
+type: module
+description: 'this module is create Ram page.'
+package: Custom
+version: 1.0
+core: 8.x
